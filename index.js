@@ -15,4 +15,4 @@ module.exports = {
     "func-names": 0,
     "id-length": [2, { "exceptions": ["i", "j", "k", "$"] }],
   },
-}
+};
