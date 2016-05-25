@@ -1,7 +1,8 @@
 # eslint-config
 
-This is our shared [ESLint](http://eslint.org) config used for JavaScript projects at DoSomething.org. It can be used by
-installing this package & setting the `extends` property in your `.eslintrc`:
+This is our shared [ESLint](http://eslint.org) config used for JavaScript projects at DoSomething.org based on [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript).
+
+It can be used by installing this package & setting the `extends` property in your `.eslintrc`:
 
 ```json
 {
