@@ -5,7 +5,7 @@ installing this package & setting the `extends` property in your `.eslintrc`:
 
 ```json
 {
-      "extends": "@dosomething/eslint-config"
+  "extends": "@dosomething/eslint-config"
 }
 ```
 
