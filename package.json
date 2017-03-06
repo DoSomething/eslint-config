@@ -1,18 +1,21 @@
 {
   "name": "@dosomething/eslint-config",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "Shared ESLint config for DoSomething.org projects.",
+  "engines": {
+    "npm": ">=3.0.0"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "David Furnes <dfurnes@dosomething.org>",
   "license": "MIT",
-  "peerDependencies": {
-    "eslint": "^2.2.0"
-  },
   "dependencies": {
-    "eslint-plugin-react": "^4.2.1",
-    "eslint-config-airbnb": "^6.1.0"
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint": "^3.15.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.9.0"
   }
 }
