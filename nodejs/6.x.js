@@ -6,7 +6,7 @@
  * @see https://github.com/airbnb/javascript
  */
 module.exports = {
-  extends: '@dosomething/eslint-config/nodejs',
+  extends: '@dosomething/eslint-config/nodejs/8.x',
   rules: {
     // Comma dangle in functions is not yet supported in Node < 8.
     'comma-dangle': ['error', {
