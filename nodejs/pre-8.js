@@ -9,12 +9,12 @@ module.exports = {
   extends: '@dosomething/eslint-config/nodejs',
   rules: {
     // Comma dangle in functions is not yet supported in Node < 8.
-    'comma-dangle': [ 'error', {
+    'comma-dangle': ['error', {
       arrays: 'always-multiline',
       objects: 'always-multiline',
       imports: 'always-multiline',
       exports: 'always-multiline',
-      functions: 'ignore'
+      functions: 'ignore',
     }],
   },
 };
