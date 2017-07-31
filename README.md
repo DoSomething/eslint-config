@@ -24,7 +24,7 @@ This package includes additional linting profiles fine-tuned to different enviro
 
 Provides ESLint config specific to native (non-transcripted, non-babel) Node.js 8.x ECMA 2017 apps.
 
-Usage:
+`.eslintrc`:
 
 ```json
 {
@@ -44,7 +44,7 @@ Based on Node.js 8.x configuraton, with minor adjustments specific to Node.js 6.
 For example, comma dangle in function arguments is not yet supported by Node.js 6.x,
 so the corresponding linting rule is configured to ignore default recommendation in this case.
 
-Usage:
+`.eslintrc`:
 
 ```json
 {
