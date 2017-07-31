@@ -2,8 +2,7 @@
  * This is DoSomething.org's shared ESLint config used to set AVA test runner
  * in Nodejs environement.
  *
- * Usage:
- *   TODO
+ * See usage example in README.md
  *
  * @see https://github.com/airbnb/javascript
  * @see https://github.com/avajs/eslint-plugin-ava
