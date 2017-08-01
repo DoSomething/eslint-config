@@ -10,6 +10,9 @@ module.exports = {
 };
 ```
 
+We recommend using JS ESlint config format because it supports inline comments and JSON does not.
+The reasoning is "if you need to deviate from recommended standard, you should explain why".
+
 ### Additional Profiles
 
 This package includes additional linting profiles fine-tuned to different environments.
