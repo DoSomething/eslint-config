@@ -61,10 +61,10 @@ Alternative yml config  `.eslintrc.yml`:
 
 **Node.js AVA tests**
 
-This esling configuration is different from other config profiles provided in this package.
+This ESLint configuration is different from other config profiles provided in this package.
 It meant to be inherited *indirectly* from a profile of your choice. Setup instructions:
 
-1. Install eslint ava plugin: `npm install --save-dev eslint-plugin-ava`
+1. Install [ESLint ava plugin](https://github.com/avajs/eslint-plugin-ava): `npm install --save-dev eslint-plugin-ava`
 2. Setup `.eslintrc` in your project root to extend from one of `@dosomething/eslint-config/nodejs` profiles (8.x or 6.x)
 3. Put another `.eslintrc` into your tests folder and set it to extend from `@dosomething/eslint-config/nodejs/ava`
 
