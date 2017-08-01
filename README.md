@@ -22,7 +22,7 @@ This package includes additional linting profiles fine-tuned to different enviro
 
 **Node.js 8.x**
 
-Provides ESLint config specific to native (non-transcripted, non-babel) Node.js 8.x ECMA 2017 apps.
+Provides ESLint config specific to native (non-transpiled, non-babel) Node.js 8.x ECMA 2017 apps.
 
 `.eslintrc`:
 
