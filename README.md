@@ -6,7 +6,7 @@ It can be used by installing this package & setting the `extends` property in yo
 
 ```js
 module.exports = {
-  extends: "@dosomething/eslint-config",
+  extends: '@dosomething/eslint-config',
 };
 ```
 
@@ -25,7 +25,7 @@ Provides ESLint config specific to native (non-transpiled, non-babel) Node.js 8.
 
 ```js
 module.exports = {
-  extends: "@dosomething/eslint-config/nodejs/8.x",
+  extends: '@dosomething/eslint-config/nodejs/8.x',
 };
 ```
 
@@ -39,7 +39,7 @@ so the corresponding linting rule is configured to ignore default recommendation
 
 ```js
 module.exports = {
-  extends: "@dosomething/eslint-config/nodejs/6.x",
+  extends: '@dosomething/eslint-config/nodejs/6.x',
 };
 ```
 
@@ -56,7 +56,7 @@ It meant to be inherited *indirectly* from a profile of your choice. Setup instr
 
 ```js
 module.exports = {
-  extends: "@dosomething/eslint-config/nodejs/ava",
+  extends: '@dosomething/eslint-config/nodejs/ava',
 };
 ```
 
