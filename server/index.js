@@ -6,7 +6,7 @@
  * @see https://github.com/airbnb/javascript
  */
 module.exports = {
-  extends: 'airbnb',
+  extends: '@dosomething/eslint-config',
   env: {
     // Enables ES6 syntax and expose ES6 global variables
     es6: true,
@@ -22,10 +22,6 @@ module.exports = {
     ecmaVersion: 2017,
   },
   rules: {
-    // Do not require named functions.
-    'func-names': 'off',
-    // Allow common iterator variable names.
-    'id-length': ['error', { exceptions: ['i', 'j', 'k'] }],
     // We don't use babel in native Node.js apps, so require 'use strict'.
     // See https://git.io/vr6I0.
     strict: ['error', 'global'],
