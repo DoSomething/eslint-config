@@ -1,6 +1,6 @@
 # eslint-config
 
-This is our shared [ESLint](http://eslint.org) config used for JavaScript projects at DoSomething.org based on [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript).
+This is our [ESLint](http://eslint.org) config used for JavaScript projects at DoSomething.org, based on [Airbnb's JavaScript Style Guide](https://github.com/airbnb/javascript).
 
 It can be used by installing this package & setting the `extends` property in your `.eslintrc.js`:
 
@@ -10,57 +10,39 @@ module.exports = {
 };
 ```
 
-We recommend using JS ESlint config format because it supports inline comments and JSON does not.
-The reasoning is "if you need to deviate from recommended standard, you should explain why".
+But you probably want to use a preset fine-tuned to your environment:
 
-### Additional Profiles
+### In browser...
 
-This package includes additional linting profiles fine-tuned to different environments.
-
-**Node.js 8.x**
-
-Provides ESLint config specific to native (non-transpiled, non-babel) Node.js 8.x ECMA 2017 apps.
-
-`.eslintrc.js`:
+We use [Babel](https://babeljs.io), [Prettier](https://prettier.io) and some browser-specific rules:
 
 ```js
 module.exports = {
-  extends: '@dosomething/eslint-config/nodejs/8.x',
+  extends: '@dosomething/eslint-config/browser',
 };
 ```
 
-**Node.js 6.x**
 
-Based on Node.js 8.x configuraton, with minor adjustments specific to Node.js 6.x support.
-For example, comma dangle in function arguments is not yet supported by Node.js 6.x,
-so the corresponding linting rule is configured to ignore default recommendation in this case.
+### On a server...
 
-`.eslintrc.js`:
+We also write code for [Node.js](https://nodejs.org/en/). We do not use a compilation step on the server.
 
 ```js
 module.exports = {
-  extends: '@dosomething/eslint-config/nodejs/6.x',
+  extends: '@dosomething/eslint-config/server',
 };
 ```
 
-**Node.js AVA tests**
+#### AVA tests
 
 This ESLint configuration is different from other config profiles provided in this package.
 It meant to be inherited *indirectly* from a profile of your choice. Setup instructions:
 
-1. Install [ESLint ava plugin](https://github.com/avajs/eslint-plugin-ava): `npm install --save-dev eslint-plugin-ava`
-2. Setup `.eslintrc.js` in your project root to extend from one of `@dosomething/eslint-config/nodejs` profiles (8.x or 6.x)
-3. Put another `.eslintrc.js` into your tests folder and set it to extend from `@dosomething/eslint-config/nodejs/ava`
-
-`.eslintrc.js`:
-
-```js
-module.exports = {
-  extends: '@dosomething/eslint-config/nodejs/ava',
-};
-```
+1. Install the [ESLint AVA plugin](https://github.com/avajs/eslint-plugin-ava): `npm install --save-dev eslint-plugin-ava`.
+2. Setup `.eslintrc.js` in your project root to extend `@dosomething/eslint-config/server`.
+3. Put another `.eslintrc.js` into your tests folder and set it to extend from `@dosomething/eslint-config/server/ava`
 
 ### License
-&copy;2016 DoSomething.org. @dosomething/eslint-config is free software, and may be redistributed under the
+&copy; DoSomething.org. @dosomething/eslint-config is free software, and may be redistributed under the
 terms specified in the [LICENSE](https://github.com/DoSomething/eslint-config/blob/master/LICENSE) file. The
 name and logo for DoSomething.org are trademarks of Do Something, Inc and may not be used without permission.
