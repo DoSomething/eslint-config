@@ -14,6 +14,8 @@ module.exports = {
 
   extends: [
     '@dosomething/eslint-config',
+    'prettier',
+    'prettier/react'
   ],
 
   env: {
