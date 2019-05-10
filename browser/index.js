@@ -31,6 +31,17 @@ module.exports = {
     'no-console': 'off',
     'no-debugger': 'warn',
 
+    // We like, but don't require destructuring.
+    'prefer-destructuring': 'off',
+    'react/destructuring-assignment': 'off',
+
+    // Don't warn when using GraphQL's meta fields.
+    'no-underscore-dangle': ['warn', { allow: ['__typename', '__schema'] }],
+
+    // Require multi-line curly braces for all conditionals.
+    'brace-style': ['error', '1tbs', { allowSingleLine: false }],
+    curly: ['error', 'all'],
+
     // Disable 'no-return-assign' because it makes common
     // patterns like React's refs unwieldy.
     'no-return-assign': 'off',
@@ -40,5 +51,21 @@ module.exports = {
 
     // Disable JSX indenting which may conflict with Prettier.
     'react/jsx-indent': 0,
+
+    // Warn on missing alt or caption.
+    'jsx-a11y/alt-text': 'warn',
+    'jsx-a11y/media-has-caption': 'warn',
+
+    // Require imports to be grouped by type (packages, then internal files).
+    'import/order': [
+      'error',
+      {
+        'newlines-between': 'always',
+        groups: [
+          ['builtin', 'external'],
+          ['parent', 'sibling', 'internal', 'index'],
+        ],
+      },
+    ],
   },
 };
