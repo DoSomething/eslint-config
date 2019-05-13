@@ -14,7 +14,6 @@ module.exports = {
 
   extends: [
     '@dosomething/eslint-config',
-    'prettier',
     'prettier/react'
   ],
 
@@ -31,14 +30,17 @@ module.exports = {
     'no-console': 'off',
     'no-debugger': 'warn',
 
-    // Disable 'no-return-assign' because it makes common
-    // patterns like React's refs unwieldy.
-    'no-return-assign': 'off',
-
     // We prefer not to use the .jsx file extension.
     'react/jsx-filename-extension': 'off',
 
     // Disable JSX indenting which may conflict with Prettier.
     'react/jsx-indent': 0,
+
+    // Warn on missing alt or caption attributes.
+    'jsx-a11y/alt-text': 'warn',
+    'jsx-a11y/media-has-caption': 'warn',
+
+    // Don't use deprecated rule that is included in Airbnb preset.
+    'jsx-a11y/label-has-for': 'off',
   },
 };
