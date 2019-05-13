@@ -39,5 +39,8 @@ module.exports = {
     // Warn on missing alt or caption attributes.
     'jsx-a11y/alt-text': 'warn',
     'jsx-a11y/media-has-caption': 'warn',
+
+    // Don't use deprecated rule that is included in Airbnb preset.
+    'jsx-a11y/label-has-for': 'off',
   },
 };
