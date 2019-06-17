@@ -1,6 +1,6 @@
 {
   "name": "@dosomething/eslint-config",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Shared ESLint config for DoSomething.org projects.",
   "engines": {
     "npm": ">=3.0.0"
